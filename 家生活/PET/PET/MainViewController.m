@@ -26,10 +26,16 @@ static NSString *kheaderIdentifier = @"headerIdentifier";
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self mainUI];
+    [self mainNavi];
+}
+
+-(void)mainNavi{
+ self.navigationItem.rightBarButtonItem=[[UIBarButtonItem alloc]initWithImage:OdeSetImageName(@"setting_Image") style:UIBarButtonItemStylePlain target:self action:@selector(ClickSetting)];
+//    self.navigationItem.leftBarButtonItem=[[UIBarButtonItem alloc]initWithCustomView:self.mainLeftView];
 }
 
 -(void)mainUI{
-    self.navigationItem.rightBarButtonItem=[[UIBarButtonItem alloc]initWithImage:OdeSetImageName(@"setting_Image") style:UIBarButtonItemStylePlain target:self action:@selector(ClickSetting)];
+   
     ary=[BluetoothObject readPlish:@"MainPlish"];
     self.maincontrollerView.backgroundColor=[UIColor clearColor];
     //通过Nib生成cell，然后注册 Nib的view需要继承 UICollectionViewCell

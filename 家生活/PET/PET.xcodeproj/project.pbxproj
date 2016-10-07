@@ -18,8 +18,7 @@
 		DE89BBCD1D7D3534007215DC /* BluetoothObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DE89BBCC1D7D3534007215DC /* BluetoothObject.m */; };
 		DE89BBCF1D7D4153007215DC /* pet.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = DE89BBCE1D7D4153007215DC /* pet.sqlite */; };
 		DE8F7AC01DA7B00300A8ADBB /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8F7ABF1DA7B00300A8ADBB /* SettingViewController.m */; };
-		DE8F7AC41DA7B27700A8ADBB /* MainLeftView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8F7AC31DA7B27700A8ADBB /* MainLeftView.m */; };
-		DE8F7AC61DA7B29700A8ADBB /* MainLeftView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE8F7AC51DA7B29700A8ADBB /* MainLeftView.xib */; };
+		DE8F7ACA1DA7B7BA00A8ADBB /* CALayer+XibConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8F7AC91DA7B7BA00A8ADBB /* CALayer+XibConfiguration.m */; };
 		DEA1B11B1DA7343400C209C3 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA1B11A1DA7343400C209C3 /* MainViewController.m */; };
 		DEA1B1211DA737C100C209C3 /* MainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA1B11F1DA737C100C209C3 /* MainCell.m */; };
 		DEA1B1221DA737C100C209C3 /* MainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEA1B1201DA737C100C209C3 /* MainCell.xib */; };
@@ -77,9 +76,8 @@
 		DE89BBCE1D7D4153007215DC /* pet.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = pet.sqlite; sourceTree = "<group>"; };
 		DE8F7ABE1DA7B00300A8ADBB /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		DE8F7ABF1DA7B00300A8ADBB /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
-		DE8F7AC21DA7B27700A8ADBB /* MainLeftView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainLeftView.h; sourceTree = "<group>"; };
-		DE8F7AC31DA7B27700A8ADBB /* MainLeftView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainLeftView.m; sourceTree = "<group>"; };
-		DE8F7AC51DA7B29700A8ADBB /* MainLeftView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainLeftView.xib; sourceTree = "<group>"; };
+		DE8F7AC81DA7B7BA00A8ADBB /* CALayer+XibConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+XibConfiguration.h"; sourceTree = "<group>"; };
+		DE8F7AC91DA7B7BA00A8ADBB /* CALayer+XibConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+XibConfiguration.m"; sourceTree = "<group>"; };
 		DEA1B1191DA7343400C209C3 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		DEA1B11A1DA7343400C209C3 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		DEA1B11E1DA737C100C209C3 /* MainCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainCell.h; sourceTree = "<group>"; };
@@ -194,6 +192,7 @@
 		DE89BBB91D7D1612007215DC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DE8F7AC71DA7B7AF00A8ADBB /* XibConfiguration */,
 				DE0FC2141D850D1800C34DB4 /* UDID_Tools */,
 				DE89BBCE1D7D4153007215DC /* pet.sqlite */,
 				DE89BBC71D7D1BD1007215DC /* KLCPopup */,
@@ -232,6 +231,15 @@
 				DE8F7ABF1DA7B00300A8ADBB /* SettingViewController.m */,
 			);
 			name = "设置";
+			sourceTree = "<group>";
+		};
+		DE8F7AC71DA7B7AF00A8ADBB /* XibConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				DE8F7AC81DA7B7BA00A8ADBB /* CALayer+XibConfiguration.h */,
+				DE8F7AC91DA7B7BA00A8ADBB /* CALayer+XibConfiguration.m */,
+			);
+			name = XibConfiguration;
 			sourceTree = "<group>";
 		};
 		DEA1B1171DA733D800C209C3 /* 登陆 */ = {
@@ -274,9 +282,6 @@
 				DEA1B1281DA7406900C209C3 /* HeatView.h */,
 				DEA1B1291DA7406900C209C3 /* HeatView.m */,
 				DEA1B12B1DA7407600C209C3 /* HeatView.xib */,
-				DE8F7AC21DA7B27700A8ADBB /* MainLeftView.h */,
-				DE8F7AC31DA7B27700A8ADBB /* MainLeftView.m */,
-				DE8F7AC51DA7B29700A8ADBB /* MainLeftView.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -475,7 +480,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE8F7AC61DA7B29700A8ADBB /* MainLeftView.xib in Resources */,
 				DEA1B12E1DA74F0200C209C3 /* MainPlish.plist in Resources */,
 				DEA6A2FC1D76E22E00E8B562 /* LaunchScreen.storyboard in Resources */,
 				DE0FC2161D850D2700C34DB4 /* KeychainAccessGroups.plist in Resources */,
@@ -564,7 +568,6 @@
 				DE89BBC61D7D17F5007215DC /* BaseNaviViewController.m in Sources */,
 				DEA6A2F41D76E22E00E8B562 /* LoginViewController.m in Sources */,
 				DE89BBC31D7D1706007215DC /* BaseViewController.m in Sources */,
-				DE8F7AC41DA7B27700A8ADBB /* MainLeftView.m in Sources */,
 				DE89BBCA1D7D1BDF007215DC /* KLCPopup.m in Sources */,
 				DE89BBC01D7D169D007215DC /* Toast+UIView.m in Sources */,
 				DEA6A2F11D76E22E00E8B562 /* AppDelegate.m in Sources */,
@@ -573,6 +576,7 @@
 				DEA1B12A1DA7406900C209C3 /* HeatView.m in Sources */,
 				DE89BBBF1D7D169D007215DC /* BaseView.m in Sources */,
 				DEA1B1321DA75D0700C209C3 /* DetailsViewController.m in Sources */,
+				DE8F7ACA1DA7B7BA00A8ADBB /* CALayer+XibConfiguration.m in Sources */,
 				DE8F7AC01DA7B00300A8ADBB /* SettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
