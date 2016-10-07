@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>low_locin_Image</key>
+		<string>轻度运动</string>
+	</dict>
+	<dict>
+		<key>moderateexercise_Image</key>
+		<string>中度运动</string>
+	</dict>
+	<dict>
+		<key>exercise_Image</key>
+		<string>重度运动</string>
+	</dict>
+	<dict>
+		<key>sellp_low_Image</key>
+		<string>浅度睡眠</string>
+	</dict>
+	<dict>
+		<key>sellp_Image</key>
+		<string>深度睡眠</string>
+	</dict>
+</array>
+</plist>

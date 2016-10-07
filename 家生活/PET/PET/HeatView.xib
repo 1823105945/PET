@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HeatView">
+            <rect key="frame" x="0.0" y="0.0" width="134" height="132"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heat_Image" translatesAutoresizingMaskIntoConstraints="NO" id="WJf-S3-DTh">
+                    <rect key="frame" x="0.0" y="0.0" width="134" height="112"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bz-g7-SxH">
+                    <rect key="frame" x="24" y="15" width="85" height="85"/>
+                    <color key="backgroundColor" white="0.33817349137931035" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="85" id="QtI-Da-2Hl"/>
+                        <constraint firstAttribute="width" constant="85" id="lmQ-Ac-7Ev"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="45"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="clock:" destination="iN0-l3-epB" eventType="touchUpInside" id="mdZ-M9-74k"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="滴滴" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HTt-nr-pdf">
+                    <rect key="frame" x="17" y="105" width="33" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="绅士" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1X-ig-3ho">
+                    <rect key="frame" x="53" y="105" width="28" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1个月" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hgv-ah-gBt">
+                    <rect key="frame" x="86" y="105" width="37" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="1bz-g7-SxH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="8bR-YI-yAx"/>
+                <constraint firstItem="WJf-S3-DTh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="FVR-KB-gbu"/>
+                <constraint firstItem="m1X-ig-3ho" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="IEF-2z-yOV"/>
+                <constraint firstAttribute="trailing" secondItem="WJf-S3-DTh" secondAttribute="trailing" id="TyK-xt-fIK"/>
+                <constraint firstAttribute="bottom" secondItem="m1X-ig-3ho" secondAttribute="bottom" constant="7" id="V3d-fK-tre"/>
+                <constraint firstAttribute="bottom" secondItem="HTt-nr-pdf" secondAttribute="bottom" constant="7" id="oP6-Dy-2o1"/>
+                <constraint firstItem="1bz-g7-SxH" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="qTB-1e-KOX"/>
+                <constraint firstItem="WJf-S3-DTh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="rD5-uc-PUD"/>
+                <constraint firstItem="Hgv-ah-gBt" firstAttribute="leading" secondItem="m1X-ig-3ho" secondAttribute="trailing" constant="3" id="uex-QJ-Ext"/>
+                <constraint firstItem="WJf-S3-DTh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="uv1-gp-ows"/>
+                <constraint firstItem="m1X-ig-3ho" firstAttribute="leading" secondItem="HTt-nr-pdf" secondAttribute="trailing" constant="3" id="vnd-X3-3HK"/>
+                <constraint firstAttribute="bottom" secondItem="Hgv-ah-gBt" secondAttribute="bottom" constant="7" id="y3N-nu-VT1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="ageLabe" destination="Hgv-ah-gBt" id="7kN-J0-YqH"/>
+                <outlet property="heatButton" destination="1bz-g7-SxH" id="Pv2-FJ-jKd"/>
+                <outlet property="heatTitleLable" destination="m1X-ig-3ho" id="gr6-M3-BG2"/>
+                <outlet property="nameLable" destination="HTt-nr-pdf" id="bbf-wn-e5q"/>
+            </connections>
+            <point key="canvasLocation" x="181" y="-3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="heat_Image" width="134" height="112"/>
+    </resources>
+</document>
