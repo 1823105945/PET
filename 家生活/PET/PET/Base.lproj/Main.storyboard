@@ -90,7 +90,7 @@
         <!--Base Navi View Controller-->
         <scene sceneID="C6F-Co-Yxy">
             <objects>
-                <navigationController storyboardIdentifier="BaseNaviViewID" id="Hyd-47-PiU" customClass="BaseNaviViewController" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="BaseNaviViewID" navigationBarHidden="YES" id="Hyd-47-PiU" customClass="BaseNaviViewController" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="sXt-qE-dIS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -122,16 +122,9 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="90%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gvw-lM-2dc">
                                 <rect key="frame" x="10" y="30" width="24" height="15"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="pSe-dK-uyM">
-                                <rect key="frame" x="40" y="45" width="150" height="2"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="T3h-Ko-hUu"/>
-                                    <constraint firstAttribute="height" constant="10" id="p3B-nw-0aB"/>
-                                </constraints>
-                            </progressView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="HvZ-56-avA">
                                 <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.34886853448275862" alpha="0.0" colorSpace="calibratedRGB"/>
@@ -157,18 +150,29 @@
                                     <outlet property="delegate" destination="xdV-tR-ks7" id="yN9-UO-AEU"/>
                                 </connections>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wyh-u8-AwH">
+                                <rect key="frame" x="271" y="20" width="43" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="Yk5-Hd-e2z"/>
+                                    <constraint firstAttribute="width" constant="43" id="cQq-ew-rv2"/>
+                                </constraints>
+                                <state key="normal" image="setting_Image"/>
+                                <connections>
+                                    <action selector="ClickSetting:" destination="xdV-tR-ks7" eventType="touchUpInside" id="Qy5-Re-35W"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="HvZ-56-avA" firstAttribute="leading" secondItem="Byc-we-yqF" secondAttribute="leading" id="1rk-DL-J2B"/>
                             <constraint firstAttribute="trailing" secondItem="HvZ-56-avA" secondAttribute="trailing" id="B9o-YR-Z5V"/>
-                            <constraint firstItem="pSe-dK-uyM" firstAttribute="top" secondItem="Byc-we-yqF" secondAttribute="topMargin" constant="45" id="D5K-ir-yeR"/>
+                            <constraint firstAttribute="trailing" secondItem="wyh-u8-AwH" secondAttribute="trailing" constant="6" id="F1Y-L3-UHF"/>
+                            <constraint firstItem="wyh-u8-AwH" firstAttribute="top" secondItem="Byc-we-yqF" secondAttribute="top" constant="20" id="G6Z-c9-KRx"/>
                             <constraint firstItem="ph0-73-iNa" firstAttribute="top" secondItem="O4V-aQ-ppm" secondAttribute="bottom" id="IR0-gH-LCv"/>
                             <constraint firstItem="Gvw-lM-2dc" firstAttribute="leading" secondItem="Byc-we-yqF" secondAttribute="leadingMargin" constant="-10" id="JLV-pA-KQf"/>
                             <constraint firstItem="O4V-aQ-ppm" firstAttribute="top" secondItem="Byc-we-yqF" secondAttribute="top" id="LSJ-Sf-ePI"/>
                             <constraint firstItem="O4V-aQ-ppm" firstAttribute="leading" secondItem="Byc-we-yqF" secondAttribute="leading" id="MtO-Dp-H5r"/>
                             <constraint firstAttribute="trailing" secondItem="O4V-aQ-ppm" secondAttribute="trailing" id="Oio-Gb-6EP"/>
-                            <constraint firstItem="pSe-dK-uyM" firstAttribute="leading" secondItem="Byc-we-yqF" secondAttribute="leadingMargin" constant="20" id="UcT-mr-3Go"/>
                             <constraint firstItem="Gvw-lM-2dc" firstAttribute="top" secondItem="Byc-we-yqF" secondAttribute="topMargin" constant="30" id="ZL1-gN-ESN"/>
                             <constraint firstItem="ph0-73-iNa" firstAttribute="top" secondItem="HvZ-56-avA" secondAttribute="bottom" id="qVD-pD-P0x"/>
                             <constraint firstItem="HvZ-56-avA" firstAttribute="top" secondItem="Byc-we-yqF" secondAttribute="top" constant="64" id="uJj-Hf-qk6"/>
@@ -196,7 +200,20 @@
                     <view key="view" contentMode="scaleToFill" id="wGy-Kp-95k">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="black_Image" translatesAutoresizingMaskIntoConstraints="NO" id="4lp-hA-jkI">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="127"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="127" id="wAl-Ah-aEh"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="4lp-hA-jkI" firstAttribute="top" secondItem="wGy-Kp-95k" secondAttribute="topMargin" id="C90-qp-VQR"/>
+                            <constraint firstItem="4lp-hA-jkI" firstAttribute="leading" secondItem="wGy-Kp-95k" secondAttribute="leadingMargin" constant="-20" id="jZb-xl-48Q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4lp-hA-jkI" secondAttribute="trailing" constant="-20" id="tcb-YX-H75"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1wK-Ep-PZV"/>
                 </viewController>
@@ -225,6 +242,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="black_Image" width="360" height="218"/>
         <image name="login_blackGrandImage" width="360" height="604"/>
+        <image name="setting_Image" width="21" height="21"/>
     </resources>
 </document>

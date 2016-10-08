@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SttingHeatView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="188"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lk-Wc-k17">
+                    <rect key="frame" x="122" y="152" width="77" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="77" id="AHe-XR-arS"/>
+                        <constraint firstAttribute="height" constant="30" id="QsN-Rb-xBt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="未绑定">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_bangding" translatesAutoresizingMaskIntoConstraints="NO" id="Rsq-F2-VKq">
+                    <rect key="frame" x="119" y="64" width="82" height="80"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.18823529411764706" green="0.85599275270453012" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Rsq-F2-VKq" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="3sM-Hv-Z7z"/>
+                <constraint firstItem="1lk-Wc-k17" firstAttribute="top" secondItem="Rsq-F2-VKq" secondAttribute="bottom" constant="8" id="R01-xx-zY4"/>
+                <constraint firstItem="1lk-Wc-k17" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="fbE-d1-5wZ"/>
+                <constraint firstItem="Rsq-F2-VKq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="64" id="hiU-Kc-Hmr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="sttingButton" destination="1lk-Wc-k17" id="nAc-B9-svb"/>
+                <outlet property="sttingImage" destination="Rsq-F2-VKq" id="FW4-1R-HQr"/>
+            </connections>
+            <point key="canvasLocation" x="245" y="188"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_bangding" width="82" height="80"/>
+    </resources>
+</document>

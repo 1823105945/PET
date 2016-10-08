@@ -19,7 +19,6 @@
 -(void)_init:(NSDictionary *)keyDic Title:(NSString *)titleTime{
    NSArray *keys= [keyDic allKeys];
     NSString *key=[keys objectAtIndex:0];
-    NSLog(@"%@",key);
     self.cellImageView.image=OdeSetImageName(key);
     self.cellTitle.text=[keyDic objectForKey:key];
     self.celltime.text=titleTime;

@@ -10,6 +10,18 @@
 		C1514001511C9C8830D66691 /* libPods-PET.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2B9C36497CA63124FA456B8 /* libPods-PET.a */; };
 		DE0FC2131D850D0E00C34DB4 /* SvUDIDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0FC2121D850D0E00C34DB4 /* SvUDIDTools.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		DE0FC2161D850D2700C34DB4 /* KeychainAccessGroups.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE0FC2151D850D2700C34DB4 /* KeychainAccessGroups.plist */; };
+		DE815CDD1DA8C92F0001DC1D /* SttingHeatView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE815CDC1DA8C92F0001DC1D /* SttingHeatView.m */; };
+		DE815CDF1DA8C9660001DC1D /* SttingHeatView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE815CDE1DA8C9660001DC1D /* SttingHeatView.xib */; };
+		DE815CE11DA8CF460001DC1D /* SttingPlish.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE815CE01DA8CF460001DC1D /* SttingPlish.plist */; };
+		DE815CE51DA8D7A30001DC1D /* BaseTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE815CE31DA8D7A30001DC1D /* BaseTableViewViewController.m */; };
+		DE815CEA1DA8E11A0001DC1D /* SettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE815CE81DA8E11A0001DC1D /* SettingCell.m */; };
+		DE815CEB1DA8E11A0001DC1D /* SettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE815CE91DA8E11A0001DC1D /* SettingCell.xib */; };
+		DE815CEF1DA9078A0001DC1D /* settingCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = DE815CED1DA9078A0001DC1D /* settingCell1.m */; };
+		DE815CF01DA9078A0001DC1D /* settingCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE815CEE1DA9078A0001DC1D /* settingCell1.xib */; };
+		DE815CF41DA908A90001DC1D /* SttingCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = DE815CF21DA908A90001DC1D /* SttingCell2.m */; };
+		DE815CF51DA908A90001DC1D /* SttingCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE815CF31DA908A90001DC1D /* SttingCell2.xib */; };
+		DE815CF91DA909040001DC1D /* SettingCell3.m in Sources */ = {isa = PBXBuildFile; fileRef = DE815CF71DA909040001DC1D /* SettingCell3.m */; };
+		DE815CFA1DA909040001DC1D /* SettingCell3.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE815CF81DA909040001DC1D /* SettingCell3.xib */; };
 		DE89BBBF1D7D169D007215DC /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE89BBBC1D7D169D007215DC /* BaseView.m */; };
 		DE89BBC01D7D169D007215DC /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE89BBBE1D7D169D007215DC /* Toast+UIView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		DE89BBC31D7D1706007215DC /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE89BBC21D7D1706007215DC /* BaseViewController.m */; };
@@ -61,6 +73,24 @@
 		DE0FC2111D850D0E00C34DB4 /* SvUDIDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SvUDIDTools.h; sourceTree = "<group>"; };
 		DE0FC2121D850D0E00C34DB4 /* SvUDIDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SvUDIDTools.m; sourceTree = "<group>"; };
 		DE0FC2151D850D2700C34DB4 /* KeychainAccessGroups.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = KeychainAccessGroups.plist; sourceTree = "<group>"; };
+		DE815CDB1DA8C92F0001DC1D /* SttingHeatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SttingHeatView.h; sourceTree = "<group>"; };
+		DE815CDC1DA8C92F0001DC1D /* SttingHeatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SttingHeatView.m; sourceTree = "<group>"; };
+		DE815CDE1DA8C9660001DC1D /* SttingHeatView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SttingHeatView.xib; sourceTree = "<group>"; };
+		DE815CE01DA8CF460001DC1D /* SttingPlish.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SttingPlish.plist; sourceTree = "<group>"; };
+		DE815CE21DA8D7A30001DC1D /* BaseTableViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewViewController.h; sourceTree = "<group>"; };
+		DE815CE31DA8D7A30001DC1D /* BaseTableViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewViewController.m; sourceTree = "<group>"; };
+		DE815CE71DA8E11A0001DC1D /* SettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingCell.h; sourceTree = "<group>"; };
+		DE815CE81DA8E11A0001DC1D /* SettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingCell.m; sourceTree = "<group>"; };
+		DE815CE91DA8E11A0001DC1D /* SettingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingCell.xib; sourceTree = "<group>"; };
+		DE815CEC1DA9078A0001DC1D /* settingCell1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = settingCell1.h; sourceTree = "<group>"; };
+		DE815CED1DA9078A0001DC1D /* settingCell1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = settingCell1.m; sourceTree = "<group>"; };
+		DE815CEE1DA9078A0001DC1D /* settingCell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = settingCell1.xib; sourceTree = "<group>"; };
+		DE815CF11DA908A90001DC1D /* SttingCell2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SttingCell2.h; sourceTree = "<group>"; };
+		DE815CF21DA908A90001DC1D /* SttingCell2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SttingCell2.m; sourceTree = "<group>"; };
+		DE815CF31DA908A90001DC1D /* SttingCell2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SttingCell2.xib; sourceTree = "<group>"; };
+		DE815CF61DA909040001DC1D /* SettingCell3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingCell3.h; sourceTree = "<group>"; };
+		DE815CF71DA909040001DC1D /* SettingCell3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingCell3.m; sourceTree = "<group>"; };
+		DE815CF81DA909040001DC1D /* SettingCell3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingCell3.xib; sourceTree = "<group>"; };
 		DE89BBBB1D7D169D007215DC /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
 		DE89BBBC1D7D169D007215DC /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
 		DE89BBBD1D7D169D007215DC /* Toast+UIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Toast+UIView.h"; sourceTree = "<group>"; };
@@ -155,6 +185,37 @@
 			name = UDID_Tools;
 			sourceTree = "<group>";
 		};
+		DE815CD91DA8C8F50001DC1D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE8F7ABE1DA7B00300A8ADBB /* SettingViewController.h */,
+				DE8F7ABF1DA7B00300A8ADBB /* SettingViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		DE815CDA1DA8C8FE0001DC1D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE815CDB1DA8C92F0001DC1D /* SttingHeatView.h */,
+				DE815CDC1DA8C92F0001DC1D /* SttingHeatView.m */,
+				DE815CDE1DA8C9660001DC1D /* SttingHeatView.xib */,
+				DE815CE71DA8E11A0001DC1D /* SettingCell.h */,
+				DE815CE81DA8E11A0001DC1D /* SettingCell.m */,
+				DE815CE91DA8E11A0001DC1D /* SettingCell.xib */,
+				DE815CEC1DA9078A0001DC1D /* settingCell1.h */,
+				DE815CED1DA9078A0001DC1D /* settingCell1.m */,
+				DE815CEE1DA9078A0001DC1D /* settingCell1.xib */,
+				DE815CF11DA908A90001DC1D /* SttingCell2.h */,
+				DE815CF21DA908A90001DC1D /* SttingCell2.m */,
+				DE815CF31DA908A90001DC1D /* SttingCell2.xib */,
+				DE815CF61DA909040001DC1D /* SettingCell3.h */,
+				DE815CF71DA909040001DC1D /* SettingCell3.m */,
+				DE815CF81DA909040001DC1D /* SettingCell3.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		DE89BBB51D7D1571007215DC /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +246,8 @@
 				DE89BBC21D7D1706007215DC /* BaseViewController.m */,
 				DE89BBC41D7D17F5007215DC /* BaseNaviViewController.h */,
 				DE89BBC51D7D17F5007215DC /* BaseNaviViewController.m */,
+				DE815CE21DA8D7A30001DC1D /* BaseTableViewViewController.h */,
+				DE815CE31DA8D7A30001DC1D /* BaseTableViewViewController.m */,
 			);
 			name = BaseViewController;
 			sourceTree = "<group>";
@@ -200,6 +263,7 @@
 				DE89BBCB1D7D3534007215DC /* BluetoothObject.h */,
 				DE89BBCC1D7D3534007215DC /* BluetoothObject.m */,
 				DEA1B12D1DA74F0200C209C3 /* MainPlish.plist */,
+				DE815CE01DA8CF460001DC1D /* SttingPlish.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -227,8 +291,8 @@
 		DE8F7AC11DA7B01600A8ADBB /* 设置 */ = {
 			isa = PBXGroup;
 			children = (
-				DE8F7ABE1DA7B00300A8ADBB /* SettingViewController.h */,
-				DE8F7ABF1DA7B00300A8ADBB /* SettingViewController.m */,
+				DE815CDA1DA8C8FE0001DC1D /* View */,
+				DE815CD91DA8C8F50001DC1D /* Controller */,
 			);
 			name = "设置";
 			sourceTree = "<group>";
@@ -482,12 +546,18 @@
 			files = (
 				DEA1B12E1DA74F0200C209C3 /* MainPlish.plist in Resources */,
 				DEA6A2FC1D76E22E00E8B562 /* LaunchScreen.storyboard in Resources */,
+				DE815CFA1DA909040001DC1D /* SettingCell3.xib in Resources */,
 				DE0FC2161D850D2700C34DB4 /* KeychainAccessGroups.plist in Resources */,
+				DE815CE11DA8CF460001DC1D /* SttingPlish.plist in Resources */,
 				DEA1B12C1DA7407600C209C3 /* HeatView.xib in Resources */,
 				DEA1B1221DA737C100C209C3 /* MainCell.xib in Resources */,
+				DE815CDF1DA8C9660001DC1D /* SttingHeatView.xib in Resources */,
 				DEA6A2F91D76E22E00E8B562 /* Assets.xcassets in Resources */,
 				DEA6A2F71D76E22E00E8B562 /* Main.storyboard in Resources */,
 				DE89BBCF1D7D4153007215DC /* pet.sqlite in Resources */,
+				DE815CEB1DA8E11A0001DC1D /* SettingCell.xib in Resources */,
+				DE815CF51DA908A90001DC1D /* SttingCell2.xib in Resources */,
+				DE815CF01DA9078A0001DC1D /* settingCell1.xib in Resources */,
 				DEA1B1271DA7380900C209C3 /* MainHeatView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -561,8 +631,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE815CE51DA8D7A30001DC1D /* BaseTableViewViewController.m in Sources */,
 				DEA1B1261DA7380900C209C3 /* MainHeatView.m in Sources */,
 				DEA1B11B1DA7343400C209C3 /* MainViewController.m in Sources */,
+				DE815CF91DA909040001DC1D /* SettingCell3.m in Sources */,
 				DE89BBCD1D7D3534007215DC /* BluetoothObject.m in Sources */,
 				DEA1B1211DA737C100C209C3 /* MainCell.m in Sources */,
 				DE89BBC61D7D17F5007215DC /* BaseNaviViewController.m in Sources */,
@@ -572,11 +644,15 @@
 				DE89BBC01D7D169D007215DC /* Toast+UIView.m in Sources */,
 				DEA6A2F11D76E22E00E8B562 /* AppDelegate.m in Sources */,
 				DEA6A2EE1D76E22E00E8B562 /* main.m in Sources */,
+				DE815CEF1DA9078A0001DC1D /* settingCell1.m in Sources */,
+				DE815CDD1DA8C92F0001DC1D /* SttingHeatView.m in Sources */,
 				DE0FC2131D850D0E00C34DB4 /* SvUDIDTools.m in Sources */,
+				DE815CF41DA908A90001DC1D /* SttingCell2.m in Sources */,
 				DEA1B12A1DA7406900C209C3 /* HeatView.m in Sources */,
 				DE89BBBF1D7D169D007215DC /* BaseView.m in Sources */,
 				DEA1B1321DA75D0700C209C3 /* DetailsViewController.m in Sources */,
 				DE8F7ACA1DA7B7BA00A8ADBB /* CALayer+XibConfiguration.m in Sources */,
+				DE815CEA1DA8E11A0001DC1D /* SettingCell.m in Sources */,
 				DE8F7AC01DA7B00300A8ADBB /* SettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

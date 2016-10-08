@@ -26,13 +26,9 @@ static NSString *kheaderIdentifier = @"headerIdentifier";
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self mainUI];
-    [self mainNavi];
 }
 
--(void)mainNavi{
- self.navigationItem.rightBarButtonItem=[[UIBarButtonItem alloc]initWithImage:OdeSetImageName(@"setting_Image") style:UIBarButtonItemStylePlain target:self action:@selector(ClickSetting)];
-//    self.navigationItem.leftBarButtonItem=[[UIBarButtonItem alloc]initWithCustomView:self.mainLeftView];
-}
+
 
 -(void)mainUI{
    
@@ -43,10 +39,11 @@ static NSString *kheaderIdentifier = @"headerIdentifier";
     //注册headerView Nib的view需要继承UICollectionReusableView
     [self.maincontrollerView registerNib:[UINib nibWithNibName:@"MainHeatView" bundle:nil] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:kheaderIdentifier];
 }
-
--(void)ClickSetting{
+- (IBAction)ClickSetting:(id)sender {
     [self performSegueWithIdentifier:@"Setting" sender:nil];
 }
+
+
 
 #pragma mark -CollectionView datasource
 //section
