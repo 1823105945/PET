@@ -26,8 +26,12 @@ static NSString *kheaderIdentifier = @"headerIdentifier";
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self mainUI];
+    
 }
 
+-(void)blackUI{
+    
+}
 
 
 -(void)mainUI{

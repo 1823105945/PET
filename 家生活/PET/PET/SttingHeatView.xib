@@ -11,7 +11,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="188"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lk-Wc-k17">
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lk-Wc-k17">
                     <rect key="frame" x="122" y="152" width="77" height="30"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="77" id="AHe-XR-arS"/>
@@ -29,7 +29,7 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_bangding" translatesAutoresizingMaskIntoConstraints="NO" id="Rsq-F2-VKq">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="icon_bangding" translatesAutoresizingMaskIntoConstraints="NO" id="Rsq-F2-VKq">
                     <rect key="frame" x="119" y="64" width="82" height="80"/>
                 </imageView>
             </subviews>
@@ -38,7 +38,7 @@
                 <constraint firstItem="Rsq-F2-VKq" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="3sM-Hv-Z7z"/>
                 <constraint firstItem="1lk-Wc-k17" firstAttribute="top" secondItem="Rsq-F2-VKq" secondAttribute="bottom" constant="8" id="R01-xx-zY4"/>
                 <constraint firstItem="1lk-Wc-k17" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="fbE-d1-5wZ"/>
-                <constraint firstItem="Rsq-F2-VKq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="64" id="hiU-Kc-Hmr"/>
+                <constraint firstItem="Rsq-F2-VKq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="hiU-Kc-Hmr"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>

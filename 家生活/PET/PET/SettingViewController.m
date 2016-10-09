@@ -69,6 +69,7 @@ static NSString *Identifier3=@"Identifier3";
             NSLog(@"分享");
         }else{
             NSLog(@"关于");
+            [self performSegueWithIdentifier:@"About" sender:nil];
         }
     }
 
@@ -76,9 +77,9 @@ static NSString *Identifier3=@"Identifier3";
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     if (section==0) {
-        return 200;
+        return 150;
     }
-    return 0;
+    return 0.0;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section==0) {

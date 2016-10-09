@@ -7,6 +7,7 @@
 //
 
 #import "BaseTableViewViewController.h"
+#import "PET.h"
 
 static NSString *Identifier=@"Identifier";
 
@@ -18,7 +19,8 @@ static NSString *Identifier=@"Identifier";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.baseTableView=[[UITableView alloc]initWithFrame:self.view.frame style:UITableViewStylePlain];
+    self.baseTableView=[[UITableView alloc]initWithFrame:CGRectMake(0, 64, screen_width, screen_height-64) style:UITableViewStylePlain];
+    self.edgesForExtendedLayout = UIRectEdgeNone;
     [self.baseTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:Identifier];
     self.baseTableView.delegate=self;
     self.baseTableView.dataSource=self;
@@ -66,11 +68,31 @@ static NSString *Identifier=@"Identifier";
     return 0;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    return 0;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     //    UITableView *cell=[super tableView:tableView cellForRowAtIndexPath:indexPath];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:Identifier forIndexPath:indexPath];
     return cell;
 }
+
+//- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+//    
+//    CGFloat sectionHeaderHeight = 40;
+//    
+//    if (scrollView.contentOffset.y<=sectionHeaderHeight&&scrollView.contentOffset.y>=0) {
+//        
+//        scrollView.contentInset = UIEdgeInsetsMake(-scrollView.contentOffset.y, 0, 0, 0);
+//        
+//    } else if (scrollView.contentOffset.y>=sectionHeaderHeight) {
+//        
+//        scrollView.contentInset = UIEdgeInsetsMake(-sectionHeaderHeight, 0, 0, 0);
+//        
+//    }
+//    
+//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -48,6 +48,11 @@
 		DEA6A2FC1D76E22E00E8B562 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEA6A2FA1D76E22E00E8B562 /* LaunchScreen.storyboard */; };
 		DEA6A3071D76E22E00E8B562 /* PETTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA6A3061D76E22E00E8B562 /* PETTests.m */; };
 		DEA6A3121D76E22E00E8B562 /* PETUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA6A3111D76E22E00E8B562 /* PETUITests.m */; };
+		DEAD806B1DA9F3750049E25C /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEAD806A1DA9F3750049E25C /* AboutViewController.m */; };
+		DEAD806E1DA9F63B0049E25C /* AboutHeatView.m in Sources */ = {isa = PBXBuildFile; fileRef = DEAD806D1DA9F63B0049E25C /* AboutHeatView.m */; };
+		DEAD80701DA9F6540049E25C /* AboutHeatView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEAD806F1DA9F6540049E25C /* AboutHeatView.xib */; };
+		DEAD80741DA9F83D0049E25C /* AboutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DEAD80721DA9F83D0049E25C /* AboutCell.m */; };
+		DEAD80751DA9F83D0049E25C /* AboutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEAD80731DA9F83D0049E25C /* AboutCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +144,14 @@
 		DEA6A3111D76E22E00E8B562 /* PETUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PETUITests.m; sourceTree = "<group>"; };
 		DEA6A3131D76E22E00E8B562 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEA6A31F1D76E36F00E8B562 /* PET.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PET.h; sourceTree = SOURCE_ROOT; };
+		DEAD80691DA9F3750049E25C /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		DEAD806A1DA9F3750049E25C /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		DEAD806C1DA9F63B0049E25C /* AboutHeatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutHeatView.h; sourceTree = "<group>"; };
+		DEAD806D1DA9F63B0049E25C /* AboutHeatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutHeatView.m; sourceTree = "<group>"; };
+		DEAD806F1DA9F6540049E25C /* AboutHeatView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutHeatView.xib; sourceTree = "<group>"; };
+		DEAD80711DA9F83D0049E25C /* AboutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutCell.h; sourceTree = "<group>"; };
+		DEAD80721DA9F83D0049E25C /* AboutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutCell.m; sourceTree = "<group>"; };
+		DEAD80731DA9F83D0049E25C /* AboutCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutCell.xib; sourceTree = "<group>"; };
 		F2B9C36497CA63124FA456B8 /* libPods-PET.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PET.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -190,6 +203,8 @@
 			children = (
 				DE8F7ABE1DA7B00300A8ADBB /* SettingViewController.h */,
 				DE8F7ABF1DA7B00300A8ADBB /* SettingViewController.m */,
+				DEAD80691DA9F3750049E25C /* AboutViewController.h */,
+				DEAD806A1DA9F3750049E25C /* AboutViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -212,6 +227,12 @@
 				DE815CF61DA909040001DC1D /* SettingCell3.h */,
 				DE815CF71DA909040001DC1D /* SettingCell3.m */,
 				DE815CF81DA909040001DC1D /* SettingCell3.xib */,
+				DEAD806C1DA9F63B0049E25C /* AboutHeatView.h */,
+				DEAD806D1DA9F63B0049E25C /* AboutHeatView.m */,
+				DEAD806F1DA9F6540049E25C /* AboutHeatView.xib */,
+				DEAD80711DA9F83D0049E25C /* AboutCell.h */,
+				DEAD80721DA9F83D0049E25C /* AboutCell.m */,
+				DEAD80731DA9F83D0049E25C /* AboutCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -547,6 +568,7 @@
 				DEA1B12E1DA74F0200C209C3 /* MainPlish.plist in Resources */,
 				DEA6A2FC1D76E22E00E8B562 /* LaunchScreen.storyboard in Resources */,
 				DE815CFA1DA909040001DC1D /* SettingCell3.xib in Resources */,
+				DEAD80751DA9F83D0049E25C /* AboutCell.xib in Resources */,
 				DE0FC2161D850D2700C34DB4 /* KeychainAccessGroups.plist in Resources */,
 				DE815CE11DA8CF460001DC1D /* SttingPlish.plist in Resources */,
 				DEA1B12C1DA7407600C209C3 /* HeatView.xib in Resources */,
@@ -554,6 +576,7 @@
 				DE815CDF1DA8C9660001DC1D /* SttingHeatView.xib in Resources */,
 				DEA6A2F91D76E22E00E8B562 /* Assets.xcassets in Resources */,
 				DEA6A2F71D76E22E00E8B562 /* Main.storyboard in Resources */,
+				DEAD80701DA9F6540049E25C /* AboutHeatView.xib in Resources */,
 				DE89BBCF1D7D4153007215DC /* pet.sqlite in Resources */,
 				DE815CEB1DA8E11A0001DC1D /* SettingCell.xib in Resources */,
 				DE815CF51DA908A90001DC1D /* SttingCell2.xib in Resources */,
@@ -649,7 +672,10 @@
 				DE0FC2131D850D0E00C34DB4 /* SvUDIDTools.m in Sources */,
 				DE815CF41DA908A90001DC1D /* SttingCell2.m in Sources */,
 				DEA1B12A1DA7406900C209C3 /* HeatView.m in Sources */,
+				DEAD806B1DA9F3750049E25C /* AboutViewController.m in Sources */,
+				DEAD806E1DA9F63B0049E25C /* AboutHeatView.m in Sources */,
 				DE89BBBF1D7D169D007215DC /* BaseView.m in Sources */,
+				DEAD80741DA9F83D0049E25C /* AboutCell.m in Sources */,
 				DEA1B1321DA75D0700C209C3 /* DetailsViewController.m in Sources */,
 				DE8F7ACA1DA7B7BA00A8ADBB /* CALayer+XibConfiguration.m in Sources */,
 				DE815CEA1DA8E11A0001DC1D /* SettingCell.m in Sources */,
