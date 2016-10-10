@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface AboutHeatView : UIView
+@property (weak, nonatomic) IBOutlet UILabel *vLable;
 
 @end

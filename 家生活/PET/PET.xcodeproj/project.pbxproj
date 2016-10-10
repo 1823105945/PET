@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C1514001511C9C8830D66691 /* libPods-PET.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2B9C36497CA63124FA456B8 /* libPods-PET.a */; };
+		DE0CBDBE1DAB43610019C3A5 /* AboutFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0CBDBD1DAB43610019C3A5 /* AboutFootView.m */; };
+		DE0CBDC01DAB436F0019C3A5 /* AboutFootView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE0CBDBF1DAB436F0019C3A5 /* AboutFootView.xib */; };
 		DE0FC2131D850D0E00C34DB4 /* SvUDIDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0FC2121D850D0E00C34DB4 /* SvUDIDTools.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		DE0FC2161D850D2700C34DB4 /* KeychainAccessGroups.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE0FC2151D850D2700C34DB4 /* KeychainAccessGroups.plist */; };
 		DE815CDD1DA8C92F0001DC1D /* SttingHeatView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE815CDC1DA8C92F0001DC1D /* SttingHeatView.m */; };
@@ -75,6 +77,9 @@
 /* Begin PBXFileReference section */
 		07C614716441E1AFB4382C51 /* Pods-PET.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PET.release.xcconfig"; path = "Pods/Target Support Files/Pods-PET/Pods-PET.release.xcconfig"; sourceTree = "<group>"; };
 		7A523116100D8D6259C81869 /* Pods-PET.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PET.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PET/Pods-PET.debug.xcconfig"; sourceTree = "<group>"; };
+		DE0CBDBC1DAB43610019C3A5 /* AboutFootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutFootView.h; sourceTree = "<group>"; };
+		DE0CBDBD1DAB43610019C3A5 /* AboutFootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutFootView.m; sourceTree = "<group>"; };
+		DE0CBDBF1DAB436F0019C3A5 /* AboutFootView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutFootView.xib; sourceTree = "<group>"; };
 		DE0FC2111D850D0E00C34DB4 /* SvUDIDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SvUDIDTools.h; sourceTree = "<group>"; };
 		DE0FC2121D850D0E00C34DB4 /* SvUDIDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SvUDIDTools.m; sourceTree = "<group>"; };
 		DE0FC2151D850D2700C34DB4 /* KeychainAccessGroups.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = KeychainAccessGroups.plist; sourceTree = "<group>"; };
@@ -233,6 +238,9 @@
 				DEAD80711DA9F83D0049E25C /* AboutCell.h */,
 				DEAD80721DA9F83D0049E25C /* AboutCell.m */,
 				DEAD80731DA9F83D0049E25C /* AboutCell.xib */,
+				DE0CBDBC1DAB43610019C3A5 /* AboutFootView.h */,
+				DE0CBDBD1DAB43610019C3A5 /* AboutFootView.m */,
+				DE0CBDBF1DAB436F0019C3A5 /* AboutFootView.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -529,6 +537,7 @@
 				TargetAttributes = {
 					DEA6A2E81D76E22E00E8B562 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = S69V8T638E;
 					};
 					DEA6A3011D76E22E00E8B562 = {
 						CreatedOnToolsVersion = 7.3;
@@ -581,6 +590,7 @@
 				DE815CEB1DA8E11A0001DC1D /* SettingCell.xib in Resources */,
 				DE815CF51DA908A90001DC1D /* SttingCell2.xib in Resources */,
 				DE815CF01DA9078A0001DC1D /* settingCell1.xib in Resources */,
+				DE0CBDC01DAB436F0019C3A5 /* AboutFootView.xib in Resources */,
 				DEA1B1271DA7380900C209C3 /* MainHeatView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -667,6 +677,7 @@
 				DE89BBC01D7D169D007215DC /* Toast+UIView.m in Sources */,
 				DEA6A2F11D76E22E00E8B562 /* AppDelegate.m in Sources */,
 				DEA6A2EE1D76E22E00E8B562 /* main.m in Sources */,
+				DE0CBDBE1DAB43610019C3A5 /* AboutFootView.m in Sources */,
 				DE815CEF1DA9078A0001DC1D /* settingCell1.m in Sources */,
 				DE815CDD1DA8C92F0001DC1D /* SttingHeatView.m in Sources */,
 				DE0FC2131D850D0E00C34DB4 /* SvUDIDTools.m in Sources */,
@@ -823,8 +834,9 @@
 			baseConfigurationReference = 7A523116100D8D6259C81869 /* Pods-PET.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = PET/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.homeline.PET;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -838,8 +850,9 @@
 			baseConfigurationReference = 07C614716441E1AFB4382C51 /* Pods-PET.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = PET/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.homeline.PET;
 				PRODUCT_NAME = "$(TARGET_NAME)";

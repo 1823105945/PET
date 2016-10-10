@@ -10,6 +10,7 @@
 #import "AboutHeatView.h"
 #import "AboutCell.h"
 #import "PET.h"
+#import "AboutFootView.h"
 
 static NSString *Identifier=@"Identifier";
 
@@ -22,8 +23,11 @@ static NSString *Identifier=@"Identifier";
 - (void)viewDidLoad {
     [super viewDidLoad];
 //    self.baseTableView.frame=CGRectMake(0, 46, screen_width, screen_height-64);
-    self.baseArray=[[NSMutableArray alloc]initWithObjects:@"APP版本跟新", nil];
+    self.baseArray=[[NSMutableArray alloc]initWithObjects:@"APP版本更新", nil];
     [self.baseTableView registerNib:[UINib nibWithNibName:@"AboutCell" bundle:nil] forCellReuseIdentifier:Identifier];
+    AboutFootView *aboutFootView=[[[NSBundle mainBundle]loadNibNamed:@"AboutFootView" owner:self options:nil]lastObject];
+    aboutFootView.frame=CGRectMake(0, screen_height-70, screen_width, 70);
+    [self.view addSubview: aboutFootView];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -36,6 +40,9 @@ static NSString *Identifier=@"Identifier";
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section  {
     AboutHeatView *sttingHeatView=[[[NSBundle mainBundle]loadNibNamed:@"AboutHeatView" owner:self options:nil]lastObject];
+    NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
+    NSString *app_build = [infoDictionary objectForKey:@"CFBundleShortVersionString"];
+    sttingHeatView.vLable.text=[NSString stringWithFormat:@"爱宠物V%@",app_build];
     return sttingHeatView;
 }
 
