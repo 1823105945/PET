@@ -10,6 +10,14 @@
 		C1514001511C9C8830D66691 /* libPods-PET.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2B9C36497CA63124FA456B8 /* libPods-PET.a */; };
 		DE0CBDBE1DAB43610019C3A5 /* AboutFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0CBDBD1DAB43610019C3A5 /* AboutFootView.m */; };
 		DE0CBDC01DAB436F0019C3A5 /* AboutFootView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE0CBDBF1DAB436F0019C3A5 /* AboutFootView.xib */; };
+		DE0CBDC41DAB5D860019C3A5 /* FormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0CBDC31DAB5D860019C3A5 /* FormViewController.m */; };
+		DE0CBDC71DAB5DBD0019C3A5 /* FormSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0CBDC61DAB5DBD0019C3A5 /* FormSelectView.m */; };
+		DE0CBDD61DAB61E60019C3A5 /* DayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0CBDD41DAB61E60019C3A5 /* DayViewController.m */; };
+		DE0CBDD71DAB61E60019C3A5 /* DayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE0CBDD51DAB61E60019C3A5 /* DayViewController.xib */; };
+		DE0CBDDB1DAB61FC0019C3A5 /* WeekViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0CBDD91DAB61FC0019C3A5 /* WeekViewController.m */; };
+		DE0CBDDC1DAB61FC0019C3A5 /* WeekViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE0CBDDA1DAB61FC0019C3A5 /* WeekViewController.xib */; };
+		DE0CBDE01DAB62110019C3A5 /* MonthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0CBDDE1DAB62110019C3A5 /* MonthViewController.m */; };
+		DE0CBDE11DAB62110019C3A5 /* MonthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE0CBDDF1DAB62110019C3A5 /* MonthViewController.xib */; };
 		DE0FC2131D850D0E00C34DB4 /* SvUDIDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0FC2121D850D0E00C34DB4 /* SvUDIDTools.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		DE0FC2161D850D2700C34DB4 /* KeychainAccessGroups.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE0FC2151D850D2700C34DB4 /* KeychainAccessGroups.plist */; };
 		DE815CDD1DA8C92F0001DC1D /* SttingHeatView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE815CDC1DA8C92F0001DC1D /* SttingHeatView.m */; };
@@ -41,7 +49,6 @@
 		DEA1B12A1DA7406900C209C3 /* HeatView.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA1B1291DA7406900C209C3 /* HeatView.m */; };
 		DEA1B12C1DA7407600C209C3 /* HeatView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEA1B12B1DA7407600C209C3 /* HeatView.xib */; };
 		DEA1B12E1DA74F0200C209C3 /* MainPlish.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEA1B12D1DA74F0200C209C3 /* MainPlish.plist */; };
-		DEA1B1321DA75D0700C209C3 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA1B1311DA75D0700C209C3 /* DetailsViewController.m */; };
 		DEA6A2EE1D76E22E00E8B562 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA6A2ED1D76E22E00E8B562 /* main.m */; };
 		DEA6A2F11D76E22E00E8B562 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA6A2F01D76E22E00E8B562 /* AppDelegate.m */; };
 		DEA6A2F41D76E22E00E8B562 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA6A2F31D76E22E00E8B562 /* LoginViewController.m */; };
@@ -80,6 +87,19 @@
 		DE0CBDBC1DAB43610019C3A5 /* AboutFootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutFootView.h; sourceTree = "<group>"; };
 		DE0CBDBD1DAB43610019C3A5 /* AboutFootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutFootView.m; sourceTree = "<group>"; };
 		DE0CBDBF1DAB436F0019C3A5 /* AboutFootView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutFootView.xib; sourceTree = "<group>"; };
+		DE0CBDC21DAB5D860019C3A5 /* FormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormViewController.h; sourceTree = "<group>"; };
+		DE0CBDC31DAB5D860019C3A5 /* FormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormViewController.m; sourceTree = "<group>"; };
+		DE0CBDC51DAB5DBD0019C3A5 /* FormSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormSelectView.h; sourceTree = "<group>"; };
+		DE0CBDC61DAB5DBD0019C3A5 /* FormSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormSelectView.m; sourceTree = "<group>"; };
+		DE0CBDD31DAB61E60019C3A5 /* DayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayViewController.h; sourceTree = "<group>"; };
+		DE0CBDD41DAB61E60019C3A5 /* DayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayViewController.m; sourceTree = "<group>"; };
+		DE0CBDD51DAB61E60019C3A5 /* DayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DayViewController.xib; sourceTree = "<group>"; };
+		DE0CBDD81DAB61FC0019C3A5 /* WeekViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekViewController.h; sourceTree = "<group>"; };
+		DE0CBDD91DAB61FC0019C3A5 /* WeekViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekViewController.m; sourceTree = "<group>"; };
+		DE0CBDDA1DAB61FC0019C3A5 /* WeekViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeekViewController.xib; sourceTree = "<group>"; };
+		DE0CBDDD1DAB62110019C3A5 /* MonthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonthViewController.h; sourceTree = "<group>"; };
+		DE0CBDDE1DAB62110019C3A5 /* MonthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonthViewController.m; sourceTree = "<group>"; };
+		DE0CBDDF1DAB62110019C3A5 /* MonthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MonthViewController.xib; sourceTree = "<group>"; };
 		DE0FC2111D850D0E00C34DB4 /* SvUDIDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SvUDIDTools.h; sourceTree = "<group>"; };
 		DE0FC2121D850D0E00C34DB4 /* SvUDIDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SvUDIDTools.m; sourceTree = "<group>"; };
 		DE0FC2151D850D2700C34DB4 /* KeychainAccessGroups.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = KeychainAccessGroups.plist; sourceTree = "<group>"; };
@@ -130,8 +150,6 @@
 		DEA1B1291DA7406900C209C3 /* HeatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeatView.m; sourceTree = "<group>"; };
 		DEA1B12B1DA7407600C209C3 /* HeatView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeatView.xib; sourceTree = "<group>"; };
 		DEA1B12D1DA74F0200C209C3 /* MainPlish.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MainPlish.plist; sourceTree = "<group>"; };
-		DEA1B1301DA75D0700C209C3 /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
-		DEA1B1311DA75D0700C209C3 /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 		DEA6A2E91D76E22E00E8B562 /* PET.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PET.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA6A2ED1D76E22E00E8B562 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DEA6A2EF1D76E22E00E8B562 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -192,6 +210,42 @@
 				F2B9C36497CA63124FA456B8 /* libPods-PET.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE0CBDC11DAB5D660019C3A5 /* 统计 */ = {
+			isa = PBXGroup;
+			children = (
+				DE0CBDC91DAB5DDF0019C3A5 /* Controller */,
+				DE0CBDC81DAB5DD80019C3A5 /* View */,
+				DE0CBDC51DAB5DBD0019C3A5 /* FormSelectView.h */,
+				DE0CBDC61DAB5DBD0019C3A5 /* FormSelectView.m */,
+			);
+			name = "统计";
+			sourceTree = "<group>";
+		};
+		DE0CBDC81DAB5DD80019C3A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		DE0CBDC91DAB5DDF0019C3A5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE0CBDC21DAB5D860019C3A5 /* FormViewController.h */,
+				DE0CBDC31DAB5D860019C3A5 /* FormViewController.m */,
+				DE0CBDD31DAB61E60019C3A5 /* DayViewController.h */,
+				DE0CBDD41DAB61E60019C3A5 /* DayViewController.m */,
+				DE0CBDD51DAB61E60019C3A5 /* DayViewController.xib */,
+				DE0CBDD81DAB61FC0019C3A5 /* WeekViewController.h */,
+				DE0CBDD91DAB61FC0019C3A5 /* WeekViewController.m */,
+				DE0CBDDA1DAB61FC0019C3A5 /* WeekViewController.xib */,
+				DE0CBDDD1DAB62110019C3A5 /* MonthViewController.h */,
+				DE0CBDDE1DAB62110019C3A5 /* MonthViewController.m */,
+				DE0CBDDF1DAB62110019C3A5 /* MonthViewController.xib */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		DE0FC2141D850D1800C34DB4 /* UDID_Tools */ = {
@@ -379,15 +433,6 @@
 			name = View;
 			sourceTree = "<group>";
 		};
-		DEA1B12F1DA75CC200C209C3 /* 详情 */ = {
-			isa = PBXGroup;
-			children = (
-				DEA1B1301DA75D0700C209C3 /* DetailsViewController.h */,
-				DEA1B1311DA75D0700C209C3 /* DetailsViewController.m */,
-			);
-			name = "详情";
-			sourceTree = "<group>";
-		};
 		DEA6A2E01D76E22E00E8B562 = {
 			isa = PBXGroup;
 			children = (
@@ -413,8 +458,8 @@
 		DEA6A2EB1D76E22E00E8B562 /* PET */ = {
 			isa = PBXGroup;
 			children = (
+				DE0CBDC11DAB5D660019C3A5 /* 统计 */,
 				DE8F7AC11DA7B01600A8ADBB /* 设置 */,
-				DEA1B12F1DA75CC200C209C3 /* 详情 */,
 				DEA1B1181DA733FA00C209C3 /* 首页 */,
 				DEA1B1171DA733D800C209C3 /* 登陆 */,
 				DE89BBB91D7D1612007215DC /* Resources */,
@@ -579,6 +624,7 @@
 				DE815CFA1DA909040001DC1D /* SettingCell3.xib in Resources */,
 				DEAD80751DA9F83D0049E25C /* AboutCell.xib in Resources */,
 				DE0FC2161D850D2700C34DB4 /* KeychainAccessGroups.plist in Resources */,
+				DE0CBDE11DAB62110019C3A5 /* MonthViewController.xib in Resources */,
 				DE815CE11DA8CF460001DC1D /* SttingPlish.plist in Resources */,
 				DEA1B12C1DA7407600C209C3 /* HeatView.xib in Resources */,
 				DEA1B1221DA737C100C209C3 /* MainCell.xib in Resources */,
@@ -586,7 +632,9 @@
 				DEA6A2F91D76E22E00E8B562 /* Assets.xcassets in Resources */,
 				DEA6A2F71D76E22E00E8B562 /* Main.storyboard in Resources */,
 				DEAD80701DA9F6540049E25C /* AboutHeatView.xib in Resources */,
+				DE0CBDD71DAB61E60019C3A5 /* DayViewController.xib in Resources */,
 				DE89BBCF1D7D4153007215DC /* pet.sqlite in Resources */,
+				DE0CBDDC1DAB61FC0019C3A5 /* WeekViewController.xib in Resources */,
 				DE815CEB1DA8E11A0001DC1D /* SettingCell.xib in Resources */,
 				DE815CF51DA908A90001DC1D /* SttingCell2.xib in Resources */,
 				DE815CF01DA9078A0001DC1D /* settingCell1.xib in Resources */,
@@ -676,21 +724,25 @@
 				DE89BBCA1D7D1BDF007215DC /* KLCPopup.m in Sources */,
 				DE89BBC01D7D169D007215DC /* Toast+UIView.m in Sources */,
 				DEA6A2F11D76E22E00E8B562 /* AppDelegate.m in Sources */,
+				DE0CBDC71DAB5DBD0019C3A5 /* FormSelectView.m in Sources */,
 				DEA6A2EE1D76E22E00E8B562 /* main.m in Sources */,
 				DE0CBDBE1DAB43610019C3A5 /* AboutFootView.m in Sources */,
 				DE815CEF1DA9078A0001DC1D /* settingCell1.m in Sources */,
 				DE815CDD1DA8C92F0001DC1D /* SttingHeatView.m in Sources */,
 				DE0FC2131D850D0E00C34DB4 /* SvUDIDTools.m in Sources */,
 				DE815CF41DA908A90001DC1D /* SttingCell2.m in Sources */,
+				DE0CBDC41DAB5D860019C3A5 /* FormViewController.m in Sources */,
 				DEA1B12A1DA7406900C209C3 /* HeatView.m in Sources */,
 				DEAD806B1DA9F3750049E25C /* AboutViewController.m in Sources */,
 				DEAD806E1DA9F63B0049E25C /* AboutHeatView.m in Sources */,
+				DE0CBDE01DAB62110019C3A5 /* MonthViewController.m in Sources */,
 				DE89BBBF1D7D169D007215DC /* BaseView.m in Sources */,
 				DEAD80741DA9F83D0049E25C /* AboutCell.m in Sources */,
-				DEA1B1321DA75D0700C209C3 /* DetailsViewController.m in Sources */,
 				DE8F7ACA1DA7B7BA00A8ADBB /* CALayer+XibConfiguration.m in Sources */,
+				DE0CBDDB1DAB61FC0019C3A5 /* WeekViewController.m in Sources */,
 				DE815CEA1DA8E11A0001DC1D /* SettingCell.m in Sources */,
 				DE8F7AC01DA7B00300A8ADBB /* SettingViewController.m in Sources */,
+				DE0CBDD61DAB61E60019C3A5 /* DayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -78,11 +78,12 @@ static NSString *kheaderIdentifier = @"headerIdentifier";
     if ([kind isEqualToString:UICollectionElementKindSectionHeader]){
         MainHeatView *view =  [collectionView dequeueReusableSupplementaryViewOfKind :kind   withReuseIdentifier:kheaderIdentifier   forIndexPath:indexPath];
         view.Clock=^(UIButton *button){
-            if (button.currentBackgroundImage) {
+//            if (button.currentBackgroundImage) {
 //                有背景图跳转页面
-            }else{
-//                没有背景图调用相册
-            }
+                [self performSegueWithIdentifier:@"Form" sender:nil];
+//            }else{
+////                没有背景图调用相册
+//            }
         };
         return view;
     }

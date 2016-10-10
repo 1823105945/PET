@@ -1,22 +1,22 @@
 //
-//  details details  详情 DetailsViewController.m
+//  MonthViewController.m
 //  PET
 //
-//  Created by liu_yakai on 16/10/7.
+//  Created by liu_yakai on 16/10/10.
 //  Copyright © 2016年 liu_yakai. All rights reserved.
 //
 
-#import "DetailsViewController.h"
+#import "MonthViewController.h"
 
-@interface DetailsViewController ()
+@interface MonthViewController ()
 
 @end
 
-@implementation DetailsViewController
+@implementation MonthViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {
