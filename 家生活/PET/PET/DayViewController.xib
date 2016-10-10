@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DayViewController">
             <connections>
+                <outlet property="timeLable" destination="mNf-nP-0Sm" id="rWk-f7-M8i"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,27 +16,33 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXN-LL-m0S">
+                <button opaque="NO" tag="1001" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXN-LL-m0S">
                     <rect key="frame" x="187" y="11" width="49" height="22"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="49" id="8Y9-Ky-mSo"/>
                         <constraint firstAttribute="height" constant="22" id="i1K-tg-39U"/>
                     </constraints>
                     <state key="normal" image="block_Image"/>
+                    <connections>
+                        <action selector="beforeClock:" destination="-1" eventType="touchUpInside" id="ic7-lr-aAb"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2016/9/8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNf-nP-0Sm">
                     <rect key="frame" x="120" y="12" width="79" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.40000000000000002" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRw-5c-TPv">
+                <button opaque="NO" tag="1000" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRw-5c-TPv">
                     <rect key="frame" x="79" y="11" width="56" height="22"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="56" id="yxD-aS-Tot"/>
                         <constraint firstAttribute="height" constant="22" id="zlb-GN-bXV"/>
                     </constraints>
                     <state key="normal" image="go_Image"/>
+                    <connections>
+                        <action selector="beforeClock:" destination="-1" eventType="touchUpInside" id="PsU-Ml-RZv"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="0.64889547413793103" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>

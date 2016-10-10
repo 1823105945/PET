@@ -32,5 +32,13 @@
  *  @return 返回plis对象为数组
  */
 +(NSArray *)readPlish:(NSString *)name;
+/**
+ *  获取n天后的日期
+ *
+ *  @param n 几天
+ *
+ *  @return n天后的日期
+ */
++(NSString *)getNDay:(NSInteger)n;
 
 @end

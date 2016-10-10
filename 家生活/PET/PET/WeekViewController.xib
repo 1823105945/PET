@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WeekViewController">
             <connections>
+                <outlet property="timeLable" destination="eVT-Aq-Mei" id="lUj-HQ-NNZ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,28 +16,34 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwy-l5-uLO">
+                <button opaque="NO" tag="1000" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwy-l5-uLO">
                     <rect key="frame" x="82" y="11" width="56" height="22"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="22" id="Qqg-kB-esX"/>
                         <constraint firstAttribute="width" constant="56" id="aKL-gb-zzj"/>
                     </constraints>
                     <state key="normal" image="go_Image"/>
+                    <connections>
+                        <action selector="beforeClock:" destination="-1" eventType="touchUpInside" id="B6E-D8-5P2"/>
+                    </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDU-Bq-dAJ">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2016/9/8-2016/9/1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVT-Aq-Mei">
+                    <rect key="frame" x="123" y="12" width="79" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.40000000000000002" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="1001" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDU-Bq-dAJ">
                     <rect key="frame" x="190" y="11" width="49" height="22"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="22" id="Pdg-ha-DKv"/>
                         <constraint firstAttribute="width" constant="49" id="qFr-5f-a7b"/>
                     </constraints>
                     <state key="normal" image="block_Image"/>
+                    <connections>
+                        <action selector="beforeClock:" destination="-1" eventType="touchUpInside" id="Ln3-hI-byZ"/>
+                    </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2016/9/8-2016/9/1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVT-Aq-Mei">
-                    <rect key="frame" x="123" y="12" width="79" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="0.58577586206896548" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
             <constraints>

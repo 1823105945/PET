@@ -31,5 +31,28 @@ static BluetoothObject *bluetoothObject;
     return data;
 }
 
++(NSString *)getNDay:(NSInteger)n{
+
+     NSDate*nowDate = [NSDate date];
+
+     NSDate* theDate;
+
+     if(n!=0){
+
+         NSTimeInterval  oneDay = 24*60*60*1;  //1天的长度
+         theDate = [nowDate initWithTimeIntervalSinceNow: oneDay*n ];//initWithTimeIntervalSinceNow是从现在往前后推的秒数
+
+     }else{
+
+         theDate = nowDate;
+     }
+
+     NSDateFormatter *date_formatter = [[NSDateFormatter alloc] init];
+     [date_formatter setDateFormat:@"yyyy/MM/dd"];
+     NSString *the_date_str = [date_formatter stringFromDate:theDate];
+    
+     return the_date_str;
+ }
+
 
 @end

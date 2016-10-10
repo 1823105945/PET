@@ -7,8 +7,13 @@
 //
 
 #import "DayViewController.h"
+#import "BluetoothObject.h"
 
-@interface DayViewController ()
+@interface DayViewController (){
+    NSInteger index;
+}
+@property (weak, nonatomic) IBOutlet UILabel *timeLable;
+
 
 @end
 
@@ -16,7 +21,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    index=0;
+    self.timeLable.text=[self dateTime:index];
+
+}
+
+- (IBAction)beforeClock:(id)sender {
+    UIButton *button=(UIButton *)sender;
+    if (button.tag==1000) {
+        index=index-1;
+        self.timeLable.text=[self dateTime:index];
+    }else{
+        index=index+1;
+        self.timeLable.text=[self dateTime:index];
+    }
+}
+
+-(NSString *)dateTime:(NSInteger)n{
+    return [BluetoothObject getNDay:n];
 }
 
 - (void)didReceiveMemoryWarning {

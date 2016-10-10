@@ -150,10 +150,11 @@
 {
     NSInteger index=scrollView.contentOffset.x/screen_width;
 //    dVSwitch.selectedIndex=index;
-    self.ClockTitle(index);
+//    self.ClockTitle(index);
     NSLog(@"%f",scrollView.contentOffset.x/screen_width);
     [self disSelectButton];
     UIButton *button= [self viewWithTag:index+1000];
+    selectView.frame=CGRectMake(self.frame.size.width/self.titlesArray.count*(button.tag-1000), self.frame.size.height-10, 8 , 8);
     button.selected=YES;
     [self addChildView:index];
     self.selectIndex=index;

@@ -7,8 +7,12 @@
 //
 
 #import "WeekViewController.h"
+#import "BluetoothObject.h"
 
-@interface WeekViewController ()
+@interface WeekViewController (){
+    NSInteger index;
+}
+@property (weak, nonatomic) IBOutlet UILabel *timeLable;
 
 @end
 
@@ -16,9 +20,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    index=0;
+    self.timeLable.text=[NSString stringWithFormat:@"%@-%@",[self dateTime:index-30],[self dateTime:index]];
 }
 
+- (IBAction)beforeClock:(id)sender {
+    UIButton *button=(UIButton *)sender;
+    if (button.tag==1000) {
+        index=index-7;
+        self.timeLable.text=[NSString stringWithFormat:@"%@-%@",[self dateTime:index-7],[self dateTime:index]];
+    }else{
+        index=index+7;
+        self.timeLable.text=[NSString stringWithFormat:@"%@-%@",[self dateTime:index],[self dateTime:index+7]];
+    }
+}
+
+-(NSString *)dateTime:(NSInteger)n{
+    return [BluetoothObject getNDay:n];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
