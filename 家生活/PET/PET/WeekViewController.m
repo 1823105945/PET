@@ -8,6 +8,7 @@
 
 #import "WeekViewController.h"
 #import "BluetoothObject.h"
+#import "BTSpiderPlotterView.h"
 
 @interface WeekViewController (){
     NSInteger index;
@@ -22,6 +23,7 @@
     [super viewDidLoad];
     index=0;
     self.timeLable.text=[NSString stringWithFormat:@"%@-%@",[self dateTime:index-30],[self dateTime:index]];
+    [self _init ];
 }
 
 - (IBAction)beforeClock:(id)sender {
@@ -38,6 +40,25 @@
 -(NSString *)dateTime:(NSInteger)n{
     return [BluetoothObject getNDay:n];
 }
+//饼图
+-(void)_init{
+    NSDictionary *valueDictionary = @{@"Design": @"6",
+                                      @"Display Life": @"8",
+                                      @"Camera" : @"5",
+                                      @"Reception": @"3",
+                                      @"Performance" : @"7",
+                                      @"Software": @"6",
+                                      @"Battery Life" : @"2",
+                                      @"Ecosystem": @"4"};
+    
+    BTSpiderPlotterView *spiderView = [[BTSpiderPlotterView alloc] initWithFrame:self.view.frame valueDictionary:valueDictionary];
+    spiderView.plotColor = [UIColor colorWithRed:.8 green:.4 blue:.3 alpha:.7];
+    [self.view addSubview:spiderView];
+}
+
+
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

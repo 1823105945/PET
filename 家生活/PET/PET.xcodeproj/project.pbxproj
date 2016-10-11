@@ -20,6 +20,20 @@
 		DE0CBDE11DAB62110019C3A5 /* MonthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE0CBDDF1DAB62110019C3A5 /* MonthViewController.xib */; };
 		DE0FC2131D850D0E00C34DB4 /* SvUDIDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0FC2121D850D0E00C34DB4 /* SvUDIDTools.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		DE0FC2161D850D2700C34DB4 /* KeychainAccessGroups.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE0FC2151D850D2700C34DB4 /* KeychainAccessGroups.plist */; };
+		DE50D84D1DACC5070022755C /* UIColor+FSPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = DE50D84A1DACC5070022755C /* UIColor+FSPalette.m */; };
+		DE50D84E1DACC5070022755C /* FSLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = DE50D84C1DACC5070022755C /* FSLineChart.m */; };
+		DE50D8631DACC9550022755C /* ChartNew.min.js in Resources */ = {isa = PBXBuildFile; fileRef = DE50D8501DACC9550022755C /* ChartNew.min.js */; };
+		DE50D8641DACC9550022755C /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = DE50D8511DACC9550022755C /* index.html */; };
+		DE50D8651DACC9550022755C /* TWRBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = DE50D8531DACC9550022755C /* TWRBarChart.m */; };
+		DE50D8661DACC9550022755C /* TWRChartBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = DE50D8561DACC9550022755C /* TWRChartBuilder.m */; };
+		DE50D8671DACC9550022755C /* TWRChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE50D8581DACC9550022755C /* TWRChartView.m */; };
+		DE50D8681DACC9550022755C /* TWRCircularChart.m in Sources */ = {isa = PBXBuildFile; fileRef = DE50D85A1DACC9550022755C /* TWRCircularChart.m */; };
+		DE50D8691DACC9550022755C /* TWRDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = DE50D85C1DACC9550022755C /* TWRDataSet.m */; };
+		DE50D86A1DACC9550022755C /* TWRDataSet+Strings.m in Sources */ = {isa = PBXBuildFile; fileRef = DE50D85E1DACC9550022755C /* TWRDataSet+Strings.m */; };
+		DE50D86B1DACC9550022755C /* TWRLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = DE50D8601DACC9550022755C /* TWRLineChart.m */; };
+		DE50D86C1DACC9550022755C /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = DE50D8621DACC9550022755C /* UIColor+HexString.m */; };
+		DE50D86E1DACCA100022755C /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = DE50D86D1DACCA100022755C /* index.js */; };
+		DE50D8721DACCE9F0022755C /* BTSpiderPlotterView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE50D8711DACCE9F0022755C /* BTSpiderPlotterView.m */; };
 		DE815CDD1DA8C92F0001DC1D /* SttingHeatView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE815CDC1DA8C92F0001DC1D /* SttingHeatView.m */; };
 		DE815CDF1DA8C9660001DC1D /* SttingHeatView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE815CDE1DA8C9660001DC1D /* SttingHeatView.xib */; };
 		DE815CE11DA8CF460001DC1D /* SttingPlish.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE815CE01DA8CF460001DC1D /* SttingPlish.plist */; };
@@ -103,6 +117,32 @@
 		DE0FC2111D850D0E00C34DB4 /* SvUDIDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SvUDIDTools.h; sourceTree = "<group>"; };
 		DE0FC2121D850D0E00C34DB4 /* SvUDIDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SvUDIDTools.m; sourceTree = "<group>"; };
 		DE0FC2151D850D2700C34DB4 /* KeychainAccessGroups.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = KeychainAccessGroups.plist; sourceTree = "<group>"; };
+		DE50D8491DACC5070022755C /* UIColor+FSPalette.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FSPalette.h"; sourceTree = "<group>"; };
+		DE50D84A1DACC5070022755C /* UIColor+FSPalette.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FSPalette.m"; sourceTree = "<group>"; };
+		DE50D84B1DACC5070022755C /* FSLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSLineChart.h; sourceTree = "<group>"; };
+		DE50D84C1DACC5070022755C /* FSLineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSLineChart.m; sourceTree = "<group>"; };
+		DE50D8501DACC9550022755C /* ChartNew.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ChartNew.min.js; sourceTree = "<group>"; };
+		DE50D8511DACC9550022755C /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		DE50D8521DACC9550022755C /* TWRBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRBarChart.h; sourceTree = "<group>"; };
+		DE50D8531DACC9550022755C /* TWRBarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRBarChart.m; sourceTree = "<group>"; };
+		DE50D8541DACC9550022755C /* TWRChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRChart.h; sourceTree = "<group>"; };
+		DE50D8551DACC9550022755C /* TWRChartBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRChartBuilder.h; sourceTree = "<group>"; };
+		DE50D8561DACC9550022755C /* TWRChartBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRChartBuilder.m; sourceTree = "<group>"; };
+		DE50D8571DACC9550022755C /* TWRChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRChartView.h; sourceTree = "<group>"; };
+		DE50D8581DACC9550022755C /* TWRChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRChartView.m; sourceTree = "<group>"; };
+		DE50D8591DACC9550022755C /* TWRCircularChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRCircularChart.h; sourceTree = "<group>"; };
+		DE50D85A1DACC9550022755C /* TWRCircularChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRCircularChart.m; sourceTree = "<group>"; };
+		DE50D85B1DACC9550022755C /* TWRDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRDataSet.h; sourceTree = "<group>"; };
+		DE50D85C1DACC9550022755C /* TWRDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRDataSet.m; sourceTree = "<group>"; };
+		DE50D85D1DACC9550022755C /* TWRDataSet+Strings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TWRDataSet+Strings.h"; sourceTree = "<group>"; };
+		DE50D85E1DACC9550022755C /* TWRDataSet+Strings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TWRDataSet+Strings.m"; sourceTree = "<group>"; };
+		DE50D85F1DACC9550022755C /* TWRLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRLineChart.h; sourceTree = "<group>"; };
+		DE50D8601DACC9550022755C /* TWRLineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRLineChart.m; sourceTree = "<group>"; };
+		DE50D8611DACC9550022755C /* UIColor+HexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexString.h"; sourceTree = "<group>"; };
+		DE50D8621DACC9550022755C /* UIColor+HexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexString.m"; sourceTree = "<group>"; };
+		DE50D86D1DACCA100022755C /* index.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
+		DE50D8701DACCE9F0022755C /* BTSpiderPlotterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTSpiderPlotterView.h; sourceTree = "<group>"; };
+		DE50D8711DACCE9F0022755C /* BTSpiderPlotterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTSpiderPlotterView.m; sourceTree = "<group>"; };
 		DE815CDB1DA8C92F0001DC1D /* SttingHeatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SttingHeatView.h; sourceTree = "<group>"; };
 		DE815CDC1DA8C92F0001DC1D /* SttingHeatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SttingHeatView.m; sourceTree = "<group>"; };
 		DE815CDE1DA8C9660001DC1D /* SttingHeatView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SttingHeatView.xib; sourceTree = "<group>"; };
@@ -257,6 +297,53 @@
 			name = UDID_Tools;
 			sourceTree = "<group>";
 		};
+		DE50D8481DACC4F90022755C /* FSLineChart */ = {
+			isa = PBXGroup;
+			children = (
+				DE50D8491DACC5070022755C /* UIColor+FSPalette.h */,
+				DE50D84A1DACC5070022755C /* UIColor+FSPalette.m */,
+				DE50D84B1DACC5070022755C /* FSLineChart.h */,
+				DE50D84C1DACC5070022755C /* FSLineChart.m */,
+			);
+			name = FSLineChart;
+			sourceTree = "<group>";
+		};
+		DE50D84F1DACC9440022755C /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				DE50D86D1DACCA100022755C /* index.js */,
+				DE50D8501DACC9550022755C /* ChartNew.min.js */,
+				DE50D8511DACC9550022755C /* index.html */,
+				DE50D8521DACC9550022755C /* TWRBarChart.h */,
+				DE50D8531DACC9550022755C /* TWRBarChart.m */,
+				DE50D8541DACC9550022755C /* TWRChart.h */,
+				DE50D8551DACC9550022755C /* TWRChartBuilder.h */,
+				DE50D8561DACC9550022755C /* TWRChartBuilder.m */,
+				DE50D8571DACC9550022755C /* TWRChartView.h */,
+				DE50D8581DACC9550022755C /* TWRChartView.m */,
+				DE50D8591DACC9550022755C /* TWRCircularChart.h */,
+				DE50D85A1DACC9550022755C /* TWRCircularChart.m */,
+				DE50D85B1DACC9550022755C /* TWRDataSet.h */,
+				DE50D85C1DACC9550022755C /* TWRDataSet.m */,
+				DE50D85D1DACC9550022755C /* TWRDataSet+Strings.h */,
+				DE50D85E1DACC9550022755C /* TWRDataSet+Strings.m */,
+				DE50D85F1DACC9550022755C /* TWRLineChart.h */,
+				DE50D8601DACC9550022755C /* TWRLineChart.m */,
+				DE50D8611DACC9550022755C /* UIColor+HexString.h */,
+				DE50D8621DACC9550022755C /* UIColor+HexString.m */,
+			);
+			name = Charts;
+			sourceTree = "<group>";
+		};
+		DE50D86F1DACCE920022755C /* BTSpiderPlotterView */ = {
+			isa = PBXGroup;
+			children = (
+				DE50D8701DACCE9F0022755C /* BTSpiderPlotterView.h */,
+				DE50D8711DACCE9F0022755C /* BTSpiderPlotterView.m */,
+			);
+			name = BTSpiderPlotterView;
+			sourceTree = "<group>";
+		};
 		DE815CD91DA8C8F50001DC1D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -338,6 +425,9 @@
 		DE89BBB91D7D1612007215DC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DE50D86F1DACCE920022755C /* BTSpiderPlotterView */,
+				DE50D84F1DACC9440022755C /* Charts */,
+				DE50D8481DACC4F90022755C /* FSLineChart */,
 				DE8F7AC71DA7B7AF00A8ADBB /* XibConfiguration */,
 				DE0FC2141D850D1800C34DB4 /* UDID_Tools */,
 				DE89BBCE1D7D4153007215DC /* pet.sqlite */,
@@ -621,12 +711,15 @@
 			files = (
 				DEA1B12E1DA74F0200C209C3 /* MainPlish.plist in Resources */,
 				DEA6A2FC1D76E22E00E8B562 /* LaunchScreen.storyboard in Resources */,
+				DE50D8641DACC9550022755C /* index.html in Resources */,
+				DE50D86E1DACCA100022755C /* index.js in Resources */,
 				DE815CFA1DA909040001DC1D /* SettingCell3.xib in Resources */,
 				DEAD80751DA9F83D0049E25C /* AboutCell.xib in Resources */,
 				DE0FC2161D850D2700C34DB4 /* KeychainAccessGroups.plist in Resources */,
 				DE0CBDE11DAB62110019C3A5 /* MonthViewController.xib in Resources */,
 				DE815CE11DA8CF460001DC1D /* SttingPlish.plist in Resources */,
 				DEA1B12C1DA7407600C209C3 /* HeatView.xib in Resources */,
+				DE50D8631DACC9550022755C /* ChartNew.min.js in Resources */,
 				DEA1B1221DA737C100C209C3 /* MainCell.xib in Resources */,
 				DE815CDF1DA8C9660001DC1D /* SttingHeatView.xib in Resources */,
 				DEA6A2F91D76E22E00E8B562 /* Assets.xcassets in Resources */,
@@ -719,7 +812,9 @@
 				DE89BBCD1D7D3534007215DC /* BluetoothObject.m in Sources */,
 				DEA1B1211DA737C100C209C3 /* MainCell.m in Sources */,
 				DE89BBC61D7D17F5007215DC /* BaseNaviViewController.m in Sources */,
+				DE50D86C1DACC9550022755C /* UIColor+HexString.m in Sources */,
 				DEA6A2F41D76E22E00E8B562 /* LoginViewController.m in Sources */,
+				DE50D86B1DACC9550022755C /* TWRLineChart.m in Sources */,
 				DE89BBC31D7D1706007215DC /* BaseViewController.m in Sources */,
 				DE89BBCA1D7D1BDF007215DC /* KLCPopup.m in Sources */,
 				DE89BBC01D7D169D007215DC /* Toast+UIView.m in Sources */,
@@ -728,13 +823,18 @@
 				DEA6A2EE1D76E22E00E8B562 /* main.m in Sources */,
 				DE0CBDBE1DAB43610019C3A5 /* AboutFootView.m in Sources */,
 				DE815CEF1DA9078A0001DC1D /* settingCell1.m in Sources */,
+				DE50D8691DACC9550022755C /* TWRDataSet.m in Sources */,
+				DE50D8681DACC9550022755C /* TWRCircularChart.m in Sources */,
 				DE815CDD1DA8C92F0001DC1D /* SttingHeatView.m in Sources */,
 				DE0FC2131D850D0E00C34DB4 /* SvUDIDTools.m in Sources */,
 				DE815CF41DA908A90001DC1D /* SttingCell2.m in Sources */,
+				DE50D8671DACC9550022755C /* TWRChartView.m in Sources */,
 				DE0CBDC41DAB5D860019C3A5 /* FormViewController.m in Sources */,
 				DEA1B12A1DA7406900C209C3 /* HeatView.m in Sources */,
 				DEAD806B1DA9F3750049E25C /* AboutViewController.m in Sources */,
 				DEAD806E1DA9F63B0049E25C /* AboutHeatView.m in Sources */,
+				DE50D8721DACCE9F0022755C /* BTSpiderPlotterView.m in Sources */,
+				DE50D84E1DACC5070022755C /* FSLineChart.m in Sources */,
 				DE0CBDE01DAB62110019C3A5 /* MonthViewController.m in Sources */,
 				DE89BBBF1D7D169D007215DC /* BaseView.m in Sources */,
 				DEAD80741DA9F83D0049E25C /* AboutCell.m in Sources */,
@@ -742,7 +842,11 @@
 				DE0CBDDB1DAB61FC0019C3A5 /* WeekViewController.m in Sources */,
 				DE815CEA1DA8E11A0001DC1D /* SettingCell.m in Sources */,
 				DE8F7AC01DA7B00300A8ADBB /* SettingViewController.m in Sources */,
+				DE50D8661DACC9550022755C /* TWRChartBuilder.m in Sources */,
+				DE50D84D1DACC5070022755C /* UIColor+FSPalette.m in Sources */,
+				DE50D8651DACC9550022755C /* TWRBarChart.m in Sources */,
 				DE0CBDD61DAB61E60019C3A5 /* DayViewController.m in Sources */,
+				DE50D86A1DACC9550022755C /* TWRDataSet+Strings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
