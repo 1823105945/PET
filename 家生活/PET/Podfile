@@ -2,4 +2,5 @@
 platform:ios, ‘7.0’
 target “PET” do
 pod 'MBProgressHUD', '~> 1.0.0’
+
 end
