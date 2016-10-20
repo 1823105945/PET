@@ -8,6 +8,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MonthViewController">
             <connections>
+                <outlet property="chart" destination="JH4-Rt-fYs" id="G9g-ue-6g3"/>
+                <outlet property="chartView" destination="Xik-of-6Lb" id="cdJ-mP-1qz"/>
                 <outlet property="timeLable" destination="mUU-LQ-rRq" id="s95-Pv-NmE"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -45,14 +47,36 @@
                         <action selector="beforeClock:" destination="-1" eventType="touchUpInside" id="fzH-Qd-Di4"/>
                     </connections>
                 </button>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JH4-Rt-fYs" customClass="FSLineChart">
+                    <frame key="frameInset" minX="26" minY="43" width="322" height="128"/>
+                    <color key="backgroundColor" red="1" green="0.43966730129999998" blue="0.37286668630000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" id="LAr-VV-kNk"/>
+                        <constraint firstAttribute="height" constant="128" id="O85-P8-0IT"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xik-of-6Lb" customClass="TWRChartView">
+                    <frame key="frameInset" minX="26" minY="229" width="322" height="128"/>
+                    <color key="backgroundColor" red="1" green="0.43966730129999998" blue="0.37286668630000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" id="L1W-Oc-OWe"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="0.67112068965517246" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="76e-Ma-u4B" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="0Z1-tK-CB7"/>
+                <constraint firstItem="Xik-of-6Lb" firstAttribute="top" secondItem="JH4-Rt-fYs" secondAttribute="bottom" constant="87" id="11m-dt-wT0"/>
                 <constraint firstItem="76e-Ma-u4B" firstAttribute="leading" secondItem="mUU-LQ-rRq" secondAttribute="trailing" constant="-12" id="1uS-vy-acG"/>
+                <constraint firstAttribute="trailing" secondItem="Xik-of-6Lb" secondAttribute="trailing" constant="24" id="2hw-9q-Faa"/>
+                <constraint firstItem="JH4-Rt-fYs" firstAttribute="top" secondItem="KxO-sd-iDx" secondAttribute="bottom" constant="15" id="3Mn-aD-pn6"/>
                 <constraint firstItem="mUU-LQ-rRq" firstAttribute="leading" secondItem="KxO-sd-iDx" secondAttribute="trailing" constant="-15" id="BMg-Pb-e5v"/>
+                <constraint firstItem="Xik-of-6Lb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="24" id="Jed-lC-QzI"/>
                 <constraint firstItem="mUU-LQ-rRq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="MaV-gr-HVf"/>
+                <constraint firstAttribute="bottom" secondItem="Xik-of-6Lb" secondAttribute="bottom" constant="50" id="ZX0-L3-85K"/>
                 <constraint firstItem="mUU-LQ-rRq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="11" id="fJm-4g-6A1"/>
+                <constraint firstItem="JH4-Rt-fYs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="24" id="idD-PF-hFq"/>
+                <constraint firstAttribute="trailing" secondItem="JH4-Rt-fYs" secondAttribute="trailing" constant="24" id="oyP-QC-vwe"/>
                 <constraint firstItem="KxO-sd-iDx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="uk3-Z9-AM2"/>
             </constraints>
         </view>

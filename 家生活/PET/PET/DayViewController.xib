@@ -47,27 +47,38 @@
                         <action selector="beforeClock:" destination="-1" eventType="touchUpInside" id="PsU-Ml-RZv"/>
                     </connections>
                 </button>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9s4-jB-69e" customClass="FSLineChart">
-                    <frame key="frameInset" minX="39" minY="48" width="300" height="128"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9s4-jB-69e" customClass="FSLineChart">
+                    <frame key="frameInset" minX="24" minY="48" width="322" height="128"/>
                     <color key="backgroundColor" red="1" green="0.43966730125666564" blue="0.37286668631479969" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" id="keY-uu-qUf"/>
+                    </constraints>
                 </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HD0-ld-Dea" customClass="TWRChartView">
-                    <frame key="frameInset" minX="24" minY="269" width="300" height="128"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HD0-ld-Dea" customClass="TWRChartView">
+                    <frame key="frameInset" minX="24" minY="263" width="322" height="128"/>
                     <color key="backgroundColor" red="1" green="0.43966730129999998" blue="0.37286668630000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" id="DbA-x3-H0w"/>
+                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="0.64889547413793103" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="HD0-ld-Dea" firstAttribute="top" secondItem="9s4-jB-69e" secondAttribute="bottom" constant="87" id="780-9E-OfN"/>
+                <constraint firstItem="9s4-jB-69e" firstAttribute="top" secondItem="oRw-5c-TPv" secondAttribute="bottom" constant="15" id="8b4-CY-rXK"/>
                 <constraint firstItem="mNf-nP-0Sm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="12" id="AcN-8l-f0x"/>
                 <constraint firstItem="oRw-5c-TPv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="ICP-ft-5Da"/>
+                <constraint firstAttribute="bottom" secondItem="HD0-ld-Dea" secondAttribute="bottom" constant="50" id="JAk-Ws-RFE"/>
+                <constraint firstAttribute="trailing" secondItem="HD0-ld-Dea" secondAttribute="trailing" constant="24" id="Jlu-IC-2US"/>
+                <constraint firstItem="9s4-jB-69e" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="24" id="Ko8-d5-ckq"/>
                 <constraint firstItem="eXN-LL-m0S" firstAttribute="leading" secondItem="mNf-nP-0Sm" secondAttribute="trailing" constant="-12" id="LqF-Ke-Bqv"/>
+                <constraint firstItem="HD0-ld-Dea" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="24" id="Pnz-IQ-zbx"/>
+                <constraint firstAttribute="trailing" secondItem="9s4-jB-69e" secondAttribute="trailing" constant="24" id="UAM-y8-uYf"/>
                 <constraint firstItem="mNf-nP-0Sm" firstAttribute="leading" secondItem="oRw-5c-TPv" secondAttribute="trailing" constant="-15" id="lXU-vX-TzP"/>
                 <constraint firstItem="mNf-nP-0Sm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lg4-4O-91t"/>
                 <constraint firstItem="eXN-LL-m0S" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="oB9-na-Ivz"/>
             </constraints>
-            <point key="canvasLocation" x="43.5" y="148.5"/>
+            <point key="canvasLocation" x="-20.5" y="134.5"/>
         </view>
     </objects>
     <resources>
