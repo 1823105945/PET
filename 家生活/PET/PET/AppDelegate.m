@@ -91,6 +91,9 @@
         
         if ([c.UUID isEqual:[CBUUID UUIDWithString:@"000034e1-0000-1000-8000-00805f9b34fb"]]) {
             _writeCharacteristic = c;
+            //同步所有数据
+            [self sendBut];
+            
         }
         
         if ([c.UUID isEqual:[CBUUID UUIDWithString:@"000034e2-0000-1000-8000-00805f9b34fb"]]) {
@@ -172,6 +175,43 @@
     return data;
 }
 
+
+-(void)sendBut{
+     [self send:[NSString stringWithFormat:@"5a0100%@00010001",[self str]]];
+}
+
+-(NSString *)str{
+    NSDate *currentDate = [NSDate date];//获取当前时间，日期
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"YY,MM,dd,hh,mm,ss"];
+    NSString *dateString = [dateFormatter stringFromDate:currentDate];
+    NSLog(@"dateString:%@",dateString);
+    NSArray *b = [dateString componentsSeparatedByString:@","];
+    NSString *str=@"";
+    for (int i=0; i<b.count; i++) {
+        NSLog(@"%@",[b objectAtIndex:i]);
+        NSString *ff=[self ToHex:[[b objectAtIndex:i] longLongValue]];
+        NSLog(@"%@",ff);
+        str=[str stringByAppendingString:ff];
+        NSLog(@"%@",str);
+    }
+    return str;
+}
+
+//时间转成16进制
+-(NSString *)ToHex:(long long int)tmpid
+
+{
+    NSString * result;
+    if(tmpid<10)
+        
+        result = [NSString stringWithFormat:@"0%llx",tmpid];
+    
+    else
+        
+        result = [NSString stringWithFormat:@"%llx",tmpid];
+    return result;
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

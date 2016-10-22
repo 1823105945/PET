@@ -77,6 +77,7 @@ static NSString *kheaderIdentifier = @"headerIdentifier";
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
     if ([kind isEqualToString:UICollectionElementKindSectionHeader]){
         MainHeatView *view =  [collectionView dequeueReusableSupplementaryViewOfKind :kind   withReuseIdentifier:kheaderIdentifier   forIndexPath:indexPath];
+        view.heatTime.text= [BluetoothObject getNDay:0];
         view.Clock=^(UIButton *button){
 //            if (button.currentBackgroundImage) {
 //                有背景图跳转页面
